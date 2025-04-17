@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # o "master" se usi ancora master
+  branch: master # o "master" se usi ancora master
 
 media_folder: "assets/uploads" # cartella per le immagini nel repo
 public_folder: "/assets/uploads" # percorso pubblico per le immagini
