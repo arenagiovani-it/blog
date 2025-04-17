@@ -2,15 +2,24 @@
 layout: default
 ---
 
-<article class="container my-4">
-  <h1>{{ page.title }}</h1>
-
+<article>
+<div class="container">
+    <h1>{{ page.title }}</h1>
+      <div class="date">
+        Scritto il {{ page.date | date: "%d/%m/%Y" }}
+      </div>
+    </div>
+  <section class="it-hero-wrapper it-hero-small-size"  aria-label="In evidenza">
+    <div class="img-responsive-wrapper">
+       <div class="img-responsive">
+          <div class="img-wrapper"><img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine"></div>
+       </div>
+    </div>
+ </section>
   <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Scritto il {{ page.date | date: "%d/%m/%Y" }}
+    <div class="container">
+      {{ content }}
+    </div>
   </div>
 
   {% include disqus.html %}
